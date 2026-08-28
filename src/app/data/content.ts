@@ -80,7 +80,7 @@ export const projects: Project[] = [
     name: 'Zofanso.com',
     product: 'Food & grocery delivery',
     year: '2024',
-    role: 'Full stack development solution'
+    role: 'Full stack development solution',
     stack: ['Flutter', 'Firebase', 'Google Maps', 'Razorpay', 'Push notifications'],
     cover: 'projects/zofanso-4.png',
     images: [
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     name: 'HRMS Portal',
     product: 'Employee HR',
     year: '2023',
-    role: 'Full stack development solution'
+    role: 'Full stack development solution',
     stack: ['Flutter', 'REST APIs', 'MySQL', 'Firebase'],
     cover: 'projects/hrms-2.png',
     images: [
@@ -166,11 +166,11 @@ export const moreWork = [
   { name: 'MoRTH', note: 'Ministry of Road Transport & Highways, Govt. of India' },
   { name: 'Grozee', note: 'Grocery commerce' },
   { name: 'Travel for Pennies', note: 'US — flights, hotels, car rentals' },
-  { name: 'Resonance Frequency', note: 'Japan-based application' },
+  { name: 'Resonance Frequency', note: 'Japan-based Sound Therapy application' },
   { name: 'ERP suites', note: 'Internal operations' },
   { name: 'Real estate apps', note: 'Listing and enquiry products' },
   { name: 'Riyo Business', note: 'Logistics family — Business, Suraksha, Parivaar' },
-  { name: 'Rhope', note: 'Consumer product' },
+  { name: 'Rhope', note: 'Doctor Consumer Product App' },
   { name: 'Jewellers Pro', note: 'Trade tool' },
   { name: 'In-app purchases', note: 'Android Play Billing & App Store' },
 ];
