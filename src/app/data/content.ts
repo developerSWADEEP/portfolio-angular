@@ -29,7 +29,7 @@ export const profile = {
   started: 'January 2022',
   startedDate: new Date(2022, 0, 1),
   lede:
-    'I build mobile products that have to survive real use — marketplaces, delivery, hiring, and the internal tools sitting behind them. Flutter and native Android for the client. Node, Spring Boot, or Django when the server has to keep up.',
+    'I build full stack development solutions that have to survive real use — marketplaces, delivery, hiring, and the internal tools sitting behind them. Flutter and native Android for the client. Node, Spring Boot, or Django when the server has to keep up.',
 };
 
 export function tenureLabel(from: Date, to = new Date()): string {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     name: 'B2B Taxi Market',
     product: 'Easy Fare Taxi',
     year: '2026',
-    role: 'Mobile · marketplace',
+    role: 'Full stack development solution',
     stack: ['Flutter', 'Node.js', 'PostgreSQL', 'Google Maps', 'Firebase', 'Payments'],
     cover: 'projects/easyfare-3.png',
     images: [
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     name: 'Zofanso.com',
     product: 'Food & grocery delivery',
     year: '2024',
-    role: 'Mobile · consumer',
+    role: 'Full stack development solution'
     stack: ['Flutter', 'Firebase', 'Google Maps', 'Razorpay', 'Push notifications'],
     cover: 'projects/zofanso-4.png',
     images: [
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     name: 'Rozgar.com',
     product: 'Job portal',
     year: '2023',
-    role: 'Mobile · marketplace',
+    role: 'Full stack development solution',
     stack: ['Flutter', 'REST APIs', 'Firebase', 'Android', 'iOS'],
     cover: 'projects/rozgar-4.png',
     images: [
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     name: 'HRMS Portal',
     product: 'Employee HR',
     year: '2023',
-    role: 'Mobile · internal',
+    role: 'Full stack development solution'
     stack: ['Flutter', 'REST APIs', 'MySQL', 'Firebase'],
     cover: 'projects/hrms-2.png',
     images: [
