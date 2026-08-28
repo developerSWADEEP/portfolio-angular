@@ -1,0 +1,52 @@
+<div class="shade" (click)="onBackdrop($event)" role="dialog" aria-modal="true">
+  <header class="top">
+    <div>
+      <p class="kicker">{{ project().index }} — {{ project().name }}</p>
+      <h2>{{ project().product }}</h2>
+    </div>
+    <p class="count">{{ counter() }}</p>
+    <button class="close" type="button" (click)="close()" aria-label="Close gallery">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div
+    class="stage"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)"
+  >
+    <button class="nav prev" type="button" (click)="prev()" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.5 5.5 9 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="film">
+      <button class="peek left" type="button" (click)="prev()" tabindex="-1">
+        <img [src]="prevSrc()" [alt]="project().name + ' previous'" />
+      </button>
+      <figure class="frame">
+        <img [src]="current()" [alt]="project().name + ' screenshot ' + counter()" />
+      </figure>
+      <button class="peek right" type="button" (click)="next()" tabindex="-1">
+        <img [src]="nextSrc()" [alt]="project().name + ' next'" />
+      </button>
+    </div>
+
+    <button class="nav next" type="button" (click)="next()" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.5 5.5 15 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <footer class="meta">
+    <p>{{ project().summary }}</p>
+    <ul>
+      @for (item of project().stack; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </footer>
+</div>
